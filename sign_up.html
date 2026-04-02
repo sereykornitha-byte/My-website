@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EduX</title>
+  <link rel="stylesheet" href="sign_up.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <div class="branding">
+                <h1>EduX Academy <br></h1>
+                <h2>Skills are the Key to Unlocking Potential</h2>
+                <small>Whether you want to learn a new skill, train your teams, 
+                    or share what you know with the world, you're in the right place. 
+                    As a leader in online learning, we're here to help you achieve your goals and transform your life.</small>
+            </div>
+        </div>
+        <div class="right-side">
+            <form class="form-box" action="/upload" enctype="multipart/form-data" method="post">
+                <h2>Sign Up</h2>
+                <p>Enter your details to sign up your account</p>
+
+                <label>First Name*</label>
+                <input type="text" placeholder="First Name" required />
+
+                <label>Last Name*</label>
+                <input type="text" placeholder="Last Name" required />
+
+                <label>Email*</label>
+                <input type="email" placeholder="name@example.com" required />
+
+                <label>Password*</label>
+                <input type="password" placeholder="••••••••" required />
+
+                <label class="terms">
+                <input type="checkbox" required /> I agree to the <a href="#">terms and conditions</a>
+                </label>
+
+                <button type="submit">Sign up</button>
+
+                <p class="signin-link">Already have an account? <a href="#">Sign In</a></p>
+
+                <div class="socials">
+                    <p>Or Sign In with</p>
+                    <button class="google"><i class="fab fa-google"></i> Google</button>
+                    <button class="facebook"><i class="fab fa-facebook-f"></i> Facebook</button>
+                    <button class="twitter"><i class="fab fa-x-twitter"></i> X</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

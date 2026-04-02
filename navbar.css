@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: 'Poppin', sans-serif; /* Use the Inter font */
+    /* display: flex;
+    justify-content: center;*/
+    align-items: center; 
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+@media (max-width: 768px) { /* Styles for screens 768px wide or smaller */
+    .container {
+      width: 100%; /* Make the container full-width on smaller screens */
+      padding: 10px; 
+    }
+}
+header {
+    background-color: #6259e8; /* Light background for the navbar */
+    padding: 20px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Maximum width of the navbar */
+    margin: 0 auto; /* Center the navbar */
+    padding: 0 20px; /* Add some horizontal padding */
+}
+.logo {
+    font-size: 26px;
+    font-weight: 600; /* Use a semi-bold font weight */
+    color: #bfecff; /* Dark blue color for the logo */
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 50px; /* Space between nav items */
+}
+.nav-links li a {
+    text-decoration: none;
+    color: #ffffff; 
+    font-weight: 500;  
+    font-size: 20px;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+.nav-links a:hover{
+    color: #3896c9;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: black;
+}
+/* button log in and sign up */
+.buttons-container {
+    display: flex; /* Arrange buttons horizontally */
+    align-items: center; /* Vertically align buttons if needed */
+    gap: 10px; /* Add some space between the buttons */
+}
+.enroll-button {
+    background-color: #bfecff; /* Green button */
+    color: #6259e8;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    font-weight: 500; 
+}

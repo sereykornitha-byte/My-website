@@ -1,0 +1,354 @@
+body {
+    margin: 0;
+    font-family: 'Poppin', sans-serif; /* Use the Inter font */
+    /* display: flex;
+    justify-content: center;*/
+    align-items: center; 
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+@media (max-width: 768px) { /* Styles for screens 768px wide or smaller */
+    .container {
+      width: 100%; /* Make the container full-width on smaller screens */
+      padding: 10px; 
+    }
+}
+header {
+    background-color: #6259e8; /* Light background for the navbar */
+    padding: 20px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Maximum width of the navbar */
+    margin: 0 auto; /* Center the navbar */
+    padding: 0 20px; /* Add some horizontal padding */
+}
+.logo {
+    font-size: 26px;
+    font-weight: 600; /* Use a semi-bold font weight */
+    color: #bfecff; /* Dark blue color for the logo */
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 50px; /* Space between nav items */
+}
+.nav-links li a {
+    text-decoration: none;
+    color: #ffffff; 
+    font-weight: 500;  
+    font-size: 20px;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+.nav-links a:hover{
+    color: #3896c9;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: black;
+}
+/* button log in and sign up */
+.buttons-container {
+    display: flex; /* Arrange buttons horizontally */
+    align-items: center; /* Vertically align buttons if needed */
+    gap: 10px; /* Add some space between the buttons */
+}
+.enroll-button {
+    background-color: #bfecff; /* Green button */
+    color: #6259e8;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    font-weight: 500; 
+}
+/* ----------------------------------------------*/
+
+/* main content */
+.content-image {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;    /* For vertical centering */
+    /* margin-top: 10%;
+    margin-right: 8%;  */
+    
+}
+.content-image img {
+    height: 400px; 
+}
+
+/* main content */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Pushes text and image to the edges */
+    padding: 100px 20px; /* Increased padding, added horizontal padding */
+    background-color: #ffffff; /* White background for the section */
+    text-align: left; /* Aligns text to the left */
+    max-width: 1200px; 
+    margin: 0 auto; /* Centers the section horizontally */
+    
+}
+.hero-text {
+    flex: 1; /* Takes up available space */
+    margin-right: 20px; /* Adds space between text and image */
+}
+.hero-text h1 {
+    font-size: 2.5rem; /* Larger heading */
+    color: #000000; /* Example color: Coral */
+    margin-bottom: 10px;
+}
+.hero-text h1 {
+    font-size: 48px; /* Larger heading */
+    color: #6259e8; /* Example color: Coral */
+    margin-bottom: 10px;
+}
+.hero-text p {
+    font-size: 18px;
+    color: #000000; /* Darker text for better readability */
+    line-height: 1.7; /* Improved line height for readability */
+    margin-bottom: 20px;
+}
+.hero-buttons {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+}
+.hero-image {
+    flex: 1; /* Takes up available space */
+    text-align: right; /* Align image to the right */
+}
+.hero-image img {
+    max-width: 100%; /* Ensure image doesn't exceed its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.btn1 {
+    background-color: #bfecff; 
+    color: #6259e8;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    font-weight: 500; /* Medium font weight for the button */
+}
+
+.btn1 a {
+    text-decoration: none;
+}
+/* ----------------------------------------------*/
+/* .info-icons {
+    display: flex;
+    gap: 40px;
+}
+
+.info-icon {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.info-icon img {
+    width: 24px;
+    height: 24px;
+}
+.info-icon span {
+    font-size: 14px;
+    color: #4b5563;
+} */
+/* ----------------------------------------------*/
+.main-container{
+    align-content: center;
+    justify-items: center;
+}
+.container {
+    max-width: 1200px;
+    padding: 40px;
+    text-align: center;
+}
+
+.top-section {
+    margin-bottom: 60px;
+}
+
+.top-section p {
+    color: #7b8794;
+    margin-bottom: 10px;
+}
+
+.top-section h2 {
+    color: #2d3748;
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.features-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.feature-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    width: 250px; /* Adjust width as needed */
+}
+
+.feature-icon {
+    background-color: #ede9fe;
+    color: #7c3aed;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    font-size: 1.5rem; /* Adjust icon size */
+}
+.feature-card:hover:hover {
+    transform: translateY(-5px); /* Move the card up by 5 pixels on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow on hover */
+}
+
+.feature-title {
+    color: #2d3748;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.feature-description {
+    color: #7b8794;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.learn-more-link {
+    color: #7c3aed;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.learn-more-link:hover {
+    text-decoration: underline;
+}
+
+/* Placeholder for icons - using text for simplicity */
+.icon-book::before {
+    content: "\f02d"; /* Font Awesome book icon */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.icon-users::before {
+    content: "\f0c0"; /* Font Awesome users icon */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.icon-clock::before {
+    content: "\f017"; /* Font Awesome clock icon */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+/* footer */
+footer {
+    background-color: #6259e8; 
+    color: #fff; 
+    padding: 40px 20px; /* Add some padding */
+  }
+  
+.footer-container {
+    max-width: 1200px; /* Limit width for larger screens */
+    margin: 0 auto; /* Center the container */
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: space-around; /* Distribute space evenly */
+}
+.footer-section {
+    margin-bottom: 30px; /* Add spacing between sections */
+    width: calc(50% - 20px); /* Two columns on medium screens */
+  }
+  
+@media (min-width: 768px) {
+.footer-section {
+    width: calc(25% - 20px); /* Four columns on larger screens */
+}
+}
+  
+.footer-section h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #ecf0f1; 
+}
+  
+.footer-section p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+  
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+  
+.footer-section ul li a {
+    color: #bdc3c7; 
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+  
+.footer-section ul li a:hover {
+    color: #fff; /* White on hover */
+}
+  
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 18px;
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+  
+.social-icons a:hover {
+    color: #fff;
+}
+  
+.contact p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+  
+.contact i {
+    margin-right: 10px;
+    font-size: 16px;
+    color: #bdc3c7;
+}
+
+

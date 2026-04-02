@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppin', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background: #f4f6f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+     
+    min-height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    max-width: 900px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  }
+  
+  .left-side {
+    background-color: #6259e8;
+    color: white;
+    width: 50%;
+    padding: 60px 40px;
+  }
+  
+  .branding h1 {
+    font-size: 28px;
+    line-height: 1.4;
+    color: #bfecff;
+  }
+  
+  
+  .branding h2 {
+    font-size: 18px;
+    margin: 20px 0 10px;
+  }
+  
+  .branding small {
+    font-size: 14px;
+    color: #e0e0e0;
+  }
+  
+  .right-side {
+    width: 50%;
+    padding: 60px 40px;
+  }
+  
+  .form-box h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .form-box p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .form-box label {
+    font-size: 14px;
+    margin-top: 15px;
+    display: block;
+  }
+  
+  .form-box input[type="text"],
+  .form-box input[type="email"],
+  .form-box input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .terms {
+    font-size: 13px;
+    margin: 15px 0;
+  }
+  
+  .terms a {
+    color: #6259e8;
+    text-decoration: none;
+  }
+  
+  button[type="submit"] {
+    background-color: #6259e8;
+    color: white;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #6259e8;
+  }
+  
+  .signin-link {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+  
+  .signin-link a {
+    color: #6259e8;
+    text-decoration: none;
+  }
+  
+  .socials {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .socials p {
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+  
+  .socials button {
+    margin: 5px;
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: white;
+    cursor: pointer;
+  }
+  
+  .socials button:hover {
+    background-color: #f0f0f0;
+  }
+  
+
+  @media (max-width: 767px) {
+    .container {
+      flex-direction: column; /* Stack left and right sides vertically */
+    }
+  
+    .left-side {
+      flex-basis: 100%; /* Take full width */
+      padding: 30px; /* Adjust padding for smaller screens */
+    }
+  
+    .right-side {
+      flex-basis: 100%; /* Take full width */
+      padding: 20px; /* Adjust padding for smaller screens */
+    }
+  }
